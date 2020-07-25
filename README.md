@@ -1,2 +1,2 @@
 # xAperture.web
-a new stock photography sharing website
+A new stock photography sharing website

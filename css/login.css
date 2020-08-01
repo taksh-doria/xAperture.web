@@ -1,0 +1,130 @@
+body
+{
+    background-image:url('https://source.unsplash.com/random/dark');
+    background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity:0.9;
+}
+#login_pallet {
+    position: absolute;
+    width: 906px;
+    height: 524px;
+    left: 200px;
+    top: 107px;
+    overflow: visible;
+    background-color:#263238;
+}
+.Rectangle_1 {
+    opacity:0.9;
+    position: absolute;
+    overflow: visible;
+    width: 906px;
+    height: 524px;
+    left: 0px;
+    top: 0px;
+    background-color:"#263238";
+    box-shadow: 0 2px 2px 0 
+}
+#Rectangle_2 {
+    position: absolute;
+    width: 506px;
+    height: 524px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    background-image:url('https://source.unsplash.com/random/light');
+}
+#login_group {
+    position: absolute;
+    width: 307px;
+    height: 400px;
+    left: 551px;
+    top: 76px;
+    overflow: visible;
+}
+.login_back {
+    position: absolute;
+    overflow: visible;
+    width: 307px;
+    height: 371px;
+    left: 0px;
+    top: 25px;
+}
+.email_back {
+    position: absolute;
+    overflow: visible;
+    width: 268px;
+    height: 51px;
+    font-size:15px;
+    text-align:center;
+    font-family:Apple Color Emoji;
+    left: 18px;
+    top: 103px;
+    border-raduis:25px
+}
+.password_back {
+    position: absolute;
+    overflow: visible;
+    width: 268px;
+    height: 51px;
+    left: 19px;
+    top: 181px;
+    text-align:center;
+    font-size:15px;
+    font-family:Apple Color Emoji;
+}
+#Login {
+    position: absolute;
+    left: 19px;
+    top: 0px;
+    overflow: visible;
+    width: 256px;
+    height: 50px;
+    text-align: center;
+    font-family: Apple Color Emoji;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    color: rgba(255,255,255,1);
+}
+#button{
+    position: absolute;
+    width: 172px;
+    height: 53px;
+    left: 76px;
+    top: 291px;
+    font-size:20px;
+    font-family: Apple Color Emoji;
+    overflow: visible;
+    transform: translate(-76px, -291px) matrix(1,0,0,1,76,291) rotate(0deg);
+      transform-origin: center;
+    color:;
+    background-color:#41F098;
+    border:0;
+}
+.button_q {
+    width: 172px;
+    height: 53px;
+    position: absolute;
+    overflow: visible;
+    transform: translate(-76px, -291px) matrix(1,0,0,1,76,291) rotate(0deg);
+    transform-origin: center;
+    background-image:url('button.png');
+}
+#Login_r {
+    position: absolute;
+    left: 30px;
+    top: 13px;
+    overflow: visible;
+    width: 116px;
+    height: 31px;
+    text-align: center;
+    font-family: Apple Color Emoji;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(255,255,255,1);
+}

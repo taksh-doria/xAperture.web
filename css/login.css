@@ -25,7 +25,7 @@ body
     height: 524px;
     left: 0px;
     top: 0px;
-    background-color:"#263238";
+    background-color:#263238;
     box-shadow: 0 2px 2px 0 
 }
 #Rectangle_2 {
@@ -129,3 +129,29 @@ body
     font-size: 25px;
     color: rgba(255,255,255,1);
 }
+#link_group {
+    position: absolute;
+    width: 282px;
+    height: 36px;
+    left: 531px;
+    top: 649px;
+    overflow: visible;
+    background-color:#263238;
+}
+#Dont_Have_an_AccountCreate_one {
+    left: 0px;
+    top: 3px;
+    position: absolute;
+    overflow: visible;
+    width: 283px;
+    height: 33px;
+    text-align: center;
+    font-family: Apple Color Emoji;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(255,255,255,1);
+    text-decoration: underline;
+}          
+
+

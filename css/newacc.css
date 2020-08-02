@@ -1,0 +1,142 @@
+#account_back {
+    background-color: rgba(51,60,57,1);
+}
+.account_back {
+    position: absolute;
+    overflow: visible;
+    width: 605px;
+    height: 724px;
+    left: 337px;
+    top: 39px;
+    box-shadow: 0 2px 2px 0
+}
+#image {
+    position: absolute;
+    width: 605px;
+    height: 306px;
+    left: 337px;
+    top: 39px;
+    background-image:url('https://images.unsplash.com/photo-1496715976403-7e36dc43f17b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+    overflow: visible;
+    background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#account_group {
+    position: absolute;
+    width: 556px;
+    height: 373px;
+    left: 24px;
+    top: 330px;
+    overflow: visible;
+}
+#account_pallet {
+    fill: transparent;
+}
+.account_pallet {
+    position: absolute;
+    overflow: visible;
+    width: 556px;
+    height: 373px;
+    left: 0px;
+    top: 0px;
+}
+.email_back {
+    position: absolute;
+    overflow: visible;
+    width: 400px;
+    height: 50px;
+    left: 65px;
+    top: 32px;
+    fill: rgba(255,255,255,1);
+    stroke: rgba(112,112,112,1);
+    font-size:18px;
+    text-align:center;
+    font-family:Apple Color Emoji
+    border:none;
+    
+}
+.password_back {
+    position: absolute;
+    overflow: visible;
+    width: 400px;
+    height: 50px;
+    left: 65px;
+    top: 129px;
+    font-size:18px;
+    text-align:center;
+    font-family:Apple Color Emoji
+    border:none;
+}
+.button {
+    position: absolute;
+    width: 201px;
+    height: 63px;
+    left: 188px;
+    top: 260px;
+    overflow: visible;
+    font-size:20px;
+    border:none;
+    font-family:Apple Color Emoji;
+    background-color:rgba(64,245,176,1);
+    
+}
+#Rectangle_7 {
+    fill: rgba(64,245,176,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_7 {
+    position: absolute;
+    overflow: visible;
+    width: 201px;
+    height: 63px;
+    left: 0px;
+    top: 0px;
+}
+#Create_Account {
+    left: 24px;
+    top: 17px;
+    position: absolute;
+    overflow: visible;
+    width: 155px;
+    height: 29px;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(248,248,248,1);
+}
+
+body
+{
+    background-image:url('https://source.unsplash.com/random/light');
+    background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity:0.9;
+}
+#image_top {
+    position: absolute;
+    overflow: visible;
+    width: 523px;
+    height: 228px;
+    left: 20px;
+    top: 0px;
+    font-family: Marker Felt;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 55px;
+    padding-top:120px;
+    color: rgba(248,248,248,1);
+    text-align:center;
+}

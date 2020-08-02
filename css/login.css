@@ -61,6 +61,7 @@ body
     height: 51px;
     font-size:15px;
     text-align:center;
+    border-radius: 30px 30px 30px 30px;
     font-family:Apple Color Emoji;
     left: 18px;
     top: 103px;
@@ -73,6 +74,7 @@ body
     height: 51px;
     left: 19px;
     top: 181px;
+    border-radius: 30px 30px 30px 30px;
     text-align:center;
     font-size:15px;
     font-family:Apple Color Emoji;
@@ -100,9 +102,10 @@ body
     font-size:20px;
     font-family: Apple Color Emoji;
     overflow: visible;
+    text-align:center;
     transform: translate(-76px, -291px) matrix(1,0,0,1,76,291) rotate(0deg);
       transform-origin: center;
-    color:;
+      border-radius: 30px 30px 30px 30px;
     background-color:#41F098;
     border:0;
 }

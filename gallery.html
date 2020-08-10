@@ -2,7 +2,90 @@
 <html lang="en">
   <head>
     <title>Gallery</title>
-    </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900|Oswald:400,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+        
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
+  <script defer src="/__/firebase/7.14.2/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/7.14.2/firebase-auth.js"></script>
+  <script defer src="/__/firebase/7.14.2/firebase-database.js"></script>
+  <script defer src="/__/firebase/7.14.2/firebase-messaging.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+  <script  src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+  <script  src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script>
+      
+      
+    // Your web app's Firebase configuranotion
+    var firebaseConfig = {
+      apiKey: "AIzaSyBM_SI6We0swhWFyqOwGltfl92tjfhlW7E",
+      authDomain: "xaperture-351a7.firebaseapp.com",
+      databaseURL: "https://xaperture-351a7.firebaseio.com",
+      projectId: "xaperture-351a7",
+      storageBucket: "xaperture-351a7.appspot.com",
+      messagingSenderId: "470546416909",
+      appId: "1:470546416909:web:bbc7ddac969daacfe8dc44",
+      measurementId: "G-S4CE6WRX55"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    
+    var storage = firebase.storage();
+    $('#List').find('six').html('');
+    var i=0;
+    var storageRef=storage.ref();
+    storageRef.child('images/').listAll().then(function (result){
+                              result.items.forEach(function (imageRef)
+                                                   {
+                                                   console.log('image ref'+imageRef.toString());
+                                                   i++;
+                                                   displayImage(i,imageRef);
+                                                   });
+                              });
+  function displayImage(row,images)
+  {
+      images.getDownloadURL().then(function(url){
+                                   console.log(url);
+                                   let new_html='<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">'+
+                                   '<a href="'+url+'" class="d-block photo-item" data-fancybox="gallery">'+
+                                   '<img src="'+url+'" alt="Image" class="img-fluid">'+
+                                   '<div class="photo-text-more">'+
+                                     '<span class="icon icon-search"></span>'+
+                                   '</div>'+
+                                   '</a></div>';
+                                   
+                                   $('#List').find('six').append(new_html);
+                                   });
+  }
+  </script>
 
   <div class="site-wrap">
 
@@ -26,8 +109,6 @@
       <ul class="js-clone-nav">
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="#gallery" class="nav-link">Gallery</a></li>
-        <li><a href="#" class="nav-link">Login</a></li>
-        <li><a href="#" class="nav-link">Signup</a></li>
       </ul>
       <ul class="social js-clone-nav">
         <li><a href="https://www.facebook.com/taksh.doriya " onclick="openInNewTab('https://www.facebook.com/taksh.doriya ');"><span class="icon-facebook"></span></a></li>

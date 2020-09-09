@@ -1,92 +1,164 @@
 <!DOCTYPE html>
-<!-- code by webdevtrick (webdevtrick.com) -->
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Signup</title>
-  
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-      <link rel="stylesheet" href="css/styleacc.css">
-          <link rel="stylesheet" href="css/bootstrap.min.css">
-              <link rel="stylesheet" href="css/newacc.css">
-
-  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+<title>Signup</title>
+            <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900|Oswald:400,700" rel="stylesheet">
+            
+            <link rel="stylesheet" href="fonts/icomoon/style.css">
+            
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/owl.carousel.min.css">
+            <link rel="stylesheet" href="css/owl.theme.default.min.css">
+            <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+            <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+            <link rel="stylesheet" href="css/fancybox.min.css">
+            <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+body {
+    color: #fff;
+    background-image:url('https://source.unsplash.com/random/light');
+    background-repeat:no-repeat;
+    font-family: 'Roboto', sans-serif;
+     background-size: cover;   -ms-background-size: cover;   -o-background-size: cover;   -moz-background-size: cover;   -webkit-background-size: cover;
+}
+.form-control {
+    height: 40px;
+    box-shadow: none;
+    color: #969fa4;
+}
+.form-control:focus {
+    border-color: #5cb85c;
+}
+.form-control, .btn {
+    border-radius: 3px;
+}
+.signup-form {
+    width: 450px;
+    margin: 0 auto;
+    padding: 30px 0;
+      font-size: 15px;
+}
+.signup-form h2 {
+    color: #636363;
+    margin: 0 0 15px;
+    position: relative;
+    text-align: center;
+}
+.signup-form h2:before, .signup-form h2:after {
+    content: "";
+    height: 2px;
+    width: 30%;
+    background: #d4d4d4;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+.signup-form h2:before {
+    left: 0;
+}
+.signup-form h2:after {
+    right: 0;
+}
+.signup-form .hint-text {
+    color: #999;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.signup-form form {
+    color: #999;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    background: #f2f3f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
+.signup-form input[type="checkbox"] {
+    margin-top: 3px;
+}
+.signup-form .btn {
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 140px;
+    outline: none !important;
+}
+.signup-form .row div:first-child {
+    padding-right: 10px;
+}
+.signup-form .row div:last-child {
+    padding-left: 10px;
+}
+.signup-form a {
+    color: #fff;
+    text-decoration: underline;
+}
+.signup-form a:hover {
+    text-decoration: none;
+}
+.signup-form form a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+.signup-form form a:hover {
+    text-decoration: underline;
+}
+</style>
 </head>
-
 <body>
-
-  <div class="row">
-  <section class="section">
-    <header>
-      <h3>Create Account</h3>
-    </header>
-    <main>
-      <form>
-        <div class="form-item box-item">
-          <input type="text" name="name" class="tx1" placeholder="Name" data-required>
-          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
-        </div>
-        <div class="form-item box-item">
-          <input type="email" name="email" class="tx1" placeholder="Email" data-email data-required>
-          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
-          <small class="errorEmail"><i class="fa fa-asterisk" aria-hidden="true"></i> email is not valid</small>
-        </div>
-        <div class="form-item box-item">
-          <div class="form-item-triple">
-            <div class="radio-label">
-              <label class="label">Gender</label>
-            </div>
-            <div class="form-item">
-              <input id="Male" type="radio" name="gender" value="Male" data-once>
-              <label for="Male">Male</label>
-            </div>
-            <div class="form-item">
-              <input id="Female" type="radio" name="gender" value="Female" data-once>
-              <label for="Female">Female</label>
-            </div>
+    <header class="header-bar d-flex d-lg-block align-items-center site-navbar-target" data-aos="fade-right">
+          <div class="site-logo">
+            <a href="index.html">xAperture</a>
           </div>
-          <small class="errorOnce"><i class="fa fa-asterisk" aria-hidden="true"></i> choose at least one</small>
-        </div>
-        <div class="form-item box-item">
-          <input type="text" name="username1" placeholder="Username" data-required>
-          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
-        </div>
-        <div class="form-item-double box-item">
           
-          <div class="form-item">
-            <input type="text" name="zCode" placeholder="Zip Code" data-required data-number>
-            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
-            <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
+          <div class="d-inline-block d-lg-none ml-md-0 ml-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+          <div class="main-menu">
+            <ul class="js-clone-nav">
+              <li><a href="#section-home" class="nav-link">Home</a></li>
+              <li><a href="#section-photos" class="nav-link">Photos</a></li>
+              <li><a href="gallery.html" class="nav-link" onclick='window.open("gallery.html","new_win"); return false;'>Gallery</a></li>
+              <li><a href="" class="login.html" onclick='window.open("login.html","new_win"); return false;' >Login</a></li>
+              <li><a href="" class="newacc.html" onclick='window.open("newacc.html","new_win"); return false;'>Create Account</a></li>
+            </ul>
           </div>
+        </header>
+<div class="signup-form" style="padding-top:150px;">
+    <form action="#" method="post">
+        <h2>Register</h2>
+        <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+        <div class="form-group">
+            <div class="row">
+                <div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+                <div class="col"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+            </div>
         </div>
-        <div class="form-item box-item">
-          <input type="text" name="phone" placeholder="Phone" data-required data-number data-count="10">
-          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
-          <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
-          <small class="errorChar"><i class="fa fa-asterisk" aria-hidden="true"></i> must be 10 digits</small>
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="Email" required="required">
         </div>
-        <div class="form-item">
-          <span id="submit" class="submit">Submit</span>
+        <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
         </div>
-      </form>
-    </main>
-    <footer>
-      <p>Already have an account? <a href="login.html">Login</a></p>
-    </footer>
-    <i class="wave"></i>
-  </section>
+        <div class="form-group">
+            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+        </div>
+        <div class="form-group">
+            <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+        </div>
+    </form>
+    <div class="text-center">Already have an account? <a href="login.html">Sign in</a></div>
 </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  
-
-    <script  src="js/function.js"></script>
-
-
-
-
 </body>
-
 </html>
